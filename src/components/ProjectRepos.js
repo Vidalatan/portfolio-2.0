@@ -1,24 +1,19 @@
+import Repo from './Repo'
+
+// List of repositories to add to the page
+const repositories = {
+  // index: [name, link, image]
+  primary: ["Nerds Meet Nerds","https://nerds-meet-nerds.herokuapp.com/", "https://raw.githubusercontent.com/Nerds-Meet-Nerds/Nerds-Meet-Nerds/develop/public/assets/images/screenshots/landing-page.jpg",false],
+  1: ["Poke Shop","https://vidalatan.github.io/poke-shop/index.html", "https://raw.githubusercontent.com/Vidalatan/poke-shop/main/assets/images/poke-home-screenshot.png",false],
+  2: ["Tech Biz Blog Site","https://tech-biz-blog.herokuapp.com/", "https://raw.githubusercontent.com/Vidalatan/tech-biz-blog/main/assets/images/FinishedProductImage.png",false],
+  3: ["Weather Dashboard","https://vidalatan.github.io/weather_dashboard/", "https://raw.githubusercontent.com/Vidalatan/weather_dashboard/main/Assets/images/fullpage.png",false],
+};
 
 function ProjectRepos() {
   return (
     <section className="container pt-5">
       <h3 className="text-center">My Project Repositories</h3>
-      <div className="row pt-5">
-        <div id="primary-project" className="project-restrictor">
-            {/* <!-- <div className="container d-flex justify-content-center">
-                <a className="project-link pl-primary" href="https://via.placeholder.com/500x500" target="_blank" style="background-image: url(https://via.placeholder.com/500x500); background-position: center; width: 350px; height: 350px;">
-                    <p className="mb-0 mt-3 text-center"> Primary Project </p>
-                </a>
-            </div> --> */}
-        </div>
-      </div>
-      <div id="secondary-projects" className="row pt-3">
-        {/* <!-- <div className="col d-flex justify-content-center m-3">
-            <a className="project-link pl-secondary" href="https://via.placeholder.com/500x500" target="_blank" style="background-image: url(https://via.placeholder.com/500x500); background-position: center; width: 250px; height: 250px;">
-                <p className="mb-0 mt-3 text-center"> Other Project </p>
-            </a>
-        </div> --> */}
-      </div>
+      <Repo repositories={repositories} />
     </section>
   )
 }
