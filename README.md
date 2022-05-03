@@ -1,8 +1,8 @@
-# Portfolio 1.5
+# Portfolio 2.0
 
 ## What is it?
 
-This is an update to my previous portfolio. Since then I have learned a lot of new technologies and methods of implementing the things I wanted my portfolio to do. It now contains animations, nicer structure, and the ability to dynamically insert my repositories within the script file.
+This is an update to my previous portfolio. Since then I have learned a lot of new technologies and methods of implementing the things I wanted my portfolio to do. It is now entirely made with React.js, contains animations, nicer structure, and the ability to dynamically insert my repositories within the script file.
 
 
 ## Purpose 
